@@ -16,4 +16,5 @@ Where `<name>` is whatever you specified in `theme:install`.
 
 ## Theme settings
 
-From Settings > Front-end theme > Blank Angular > Customize you can select which Angular version to run or load Bootstrap and jQuery.
+From **Settings > Front-end theme > Blank Angular > Customize** you can select which Angular version to run.
+Also, you can select to load Bootstrap or jQuery.
