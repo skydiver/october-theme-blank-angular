@@ -1,0 +1,78 @@
+fields:
+
+    section_angular:
+        label  : Angular
+        type   : section
+
+    angular_load:
+        label     : Load Angular from
+        type      : dropdown
+        span      : left
+        showSearch: false
+        default   : cdn
+        options   :
+            cdn  : CDN
+            local: Local
+
+    angular_cdn_version:
+        label     : CDN version
+        type      : dropdown
+        span      : right
+        showSearch: false
+        trigger   :
+            action   : show
+            field    : angular_load
+            condition: value[cdn]
+        default   : "1.5.7"
+        options   :
+            "1.6.2" : "1.6.2"
+            "1.5.7" : "1.5.7"
+            "1.4.12": "1.4.12"
+            "1.3.17": "1.3.17"
+            "1.2.32": "1.2.32"
+
+    angular_version:
+        label     : Local version
+        type      : dropdown
+        span      : right
+        showSearch: false
+        trigger   :
+            action   : show
+            field    : angular_load
+            condition: value[local]
+        default   : "1.5.7"
+        options   :
+            "1.6.2" : "1.6.2"
+            "1.5.7" : "1.5.7"
+            "1.4.12": "1.4.12"
+
+    section_extra:
+        label   : Libraries and Frameworks
+        type    : section
+        cssClass: m-t-md
+
+    bootstrap_load:
+        label     : Load Bootstrap
+        type      : dropdown
+        span      : left
+        showSearch: false
+        default   : no
+        options   :
+            no   : No
+            cdn  : CDN
+            local: Local
+
+    jquery_load:
+        label     : Load jQuery
+        type      : dropdown
+        span      : right
+        showSearch: false
+        default   : no
+        options   :
+            no            : No
+            "cdn_3.1.1"   : CDN 3.1.1
+            "cdn_2.2.4"   : CDN 2.2.4
+            "cdn_1.12.4"  : CDN 1.12.4
+            "local_3.1.1" : Local 3.1.1
+            "local_2.2.4" : Local 2.2.4
+            "local_1.12.4": Local 1.12.4

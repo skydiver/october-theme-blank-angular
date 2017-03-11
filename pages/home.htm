@@ -1,0 +1,20 @@
+title = "Angular Blank Template"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+<div style="text-align:center;">
+    <img src="{{ 'assets/images/theme-preview.png'|theme }}">
+</div>
+
+<div ng-controller="DemoController as demo"  style="width:40%; margin:auto;">
+
+    <h2 style="text-align:center">{[{ demo.ready }]}</h2>
+
+    <h4>Notes:</h4>
+
+    <ul>
+        <li ng-repeat="note in demo.notes" style="margin-bottom:1em;">{[{ note }]}</li>
+    </ul>
+
+</div>

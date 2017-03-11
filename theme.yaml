@@ -1,0 +1,6 @@
+name: 'Blank Angular'
+description: 'A blank theme with Angular'
+author: 'Martin M.'
+homepage: 'https://github.com/skydiver/'
+code: blank-angular
+form: config/fields.yaml
